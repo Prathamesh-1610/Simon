@@ -58,33 +58,7 @@ function nextSequence()
     userClickedPattern.push(userChosenColour);
     playSound(userChosenColour);
      animatePress(userChosenColour);
-    // $("#"+userChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
-    // for (var i = 0; i < clickCounter; i++) {
-    //   if (gamePattern[i]==userClickedPattern[i])
-    //   {
-    //     result=1;
-    //     continue;
-    //   }
-    //   else {
-    //     var audio = new Audio("sounds/wrong.mp3");
-    //     audio.play();
-    //     $("body").addClass("game-over");
-    //     setTimeout(()=>$("body").removeClass("game-over"),200)
-    //     startOver();
-    //
-    //   }
-    // }
-    // if(clickCounter==4 && result==1)
-    // {
-    // $("#level-title").text("Level "+level+" Completed");
-    //   gamePattern=[];
-    //   userClickedPattern=[];
-    //   clickCounter=0;
-    //
-    //
-    //  setTimeout(()=> startGame(),1000);
-    //
-    // }
+   
 
 checkAns();
 
@@ -154,6 +128,7 @@ $("#level-title").text("Game Over, Completed "+ (level-1) +" Levels");
   gamePattern=[];
   userClickedPattern=[];
   clickCounter=0;
+  $(".Startbtn").text("Restart");
 }
 
 
