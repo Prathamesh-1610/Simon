@@ -121,7 +121,7 @@ function playSound(name){
 
 function startOver()
 {
-   $(".Startbtn").text("Restart");
+   $(".Startbtn").html("Restart");
 $("#level-title").text("Game Over, Completed "+ (level-1) +" Levels");
   level=0;
   result=0;
